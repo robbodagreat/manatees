@@ -4,8 +4,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+/>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 <title>Manatees - Gallery</title>
-
+<style>
+  .main a img {
+    max-width: 200px;
+  }
+</style>
 </head>
 <body>
 <div class="content">
@@ -26,9 +35,29 @@
   </div>
 
   <div class="main">
-    <img class="main-img" src="1.jpg" width="600px" />
-    <img class="main-img" src="2.jpg" width="600px" />
-    <img class="main-img" src="3.jpg" width="600px" />
+    <div class="flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6">
+      <a
+        data-caption="Manatee"
+        data-fancybox="gallery"
+        href="1.jpg"
+      >
+        <img class="rounded" src="1.jpg" />
+      </a>
+      <a
+        data-caption="Manatee"
+        data-fancybox="gallery"
+        href="2.jpg"
+      >
+        <img class="rounded" src="2.jpg" />
+      </a>
+      <a
+        data-caption="Manatee"
+        data-fancybox="gallery"
+        href="3.jpg"
+      >
+        <img class="rounded" src="3.jpg" />
+      </a>
+    </div>
   </div>
 </div>
 </body>
