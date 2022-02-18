@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html {
+  background-image: url(./bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+h2, h4 {
+  color: rgb(59, 34, 197)
+}
+
+.content {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  opacity: 0.7;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a.subpage {
+  margin-left: 24px;
+  font-size: 20px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav h5 {
+  font-size: 24px;
+  padding-left: 16px;
+  margin: 24px 0;
+}
+
+.main {
+  padding-left: 280px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  height: 100%;
+  padding-bottom: 200px;
+}
+
+.main h1 {
+  color: rgb(59, 34, 197);
+}
+
+.main h2 {
+  color: rgb(59, 34, 197);
+}
+
+.main p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #002f5b;
+
+}
+
+
+.main li {
+  color: #002f5b;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+</style>
+</head>
+<body>
+<div class="content">
+  <div class="sidenav">
+    <h5>Manatees</h5>
+    <a href="./index.html">Home</a>
+    <a href="./anatomy.html">Facts</a>
+    <a class="subpage" href="./anatomy.html">Anatomy</a>
+    <a class="subpage" href="./behaviour.html">Behaviour</a>
+    <a class="subpage" href="./habitat.html">Habitat</a>
+    <a class="subpage" href="./diet.html">Diet</a>
+    <a class="subpage" href="./mating.html">Reproduction</a>
+    <a class="subpage" href="./popculture.html">Popular Culture</a>
+    <a class="subpage" href="./misc.html">Other Facts</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./about.html">About us</a>
+    <a href="./contact.html">Contact us</a>
+  </div>
+
+  <div class="main">
+    <div>
+      <h1>Behaviour</h1>
+      <h2>Does this mean manatees can get in trouble?</h2>
+      <p>
+        We are not talking about bad behaviour like at school. When we talk about
+        behaviour with animals we're simply talking about what they do!
+      </p>
+      <h2>Manatee behaviour facts</h2>
+      <ul>
+        <li>
+          Apart from mothers with their young, or males following a receptive
+          female, manatees are generally solitary animals. This means they don't
+          have many friends :-(
+        </li>
+        <li>
+          Manatees are capable of understanding discrimination tasks and show signs
+          of complex associative learning!
+        </li>
+        <li>
+          Manatees emit a wide range of sounds used in communication, especially
+          between cows (parents) and their calves (babies).
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html> 
