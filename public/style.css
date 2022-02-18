@@ -1,0 +1,107 @@
+html {
+  background-image: url(./bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  background-color: rgba(26, 48, 121, 0.7);
+  font-family: "Roboto", sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+}
+
+h2, h4 {
+  color: rgb(255, 255, 255)
+}
+
+.content {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+  opacity: 0.7;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #b3d6ff;
+  display: block;
+}
+
+.sidenav a.subpage {
+  margin-left: 24px;
+  font-size: 20px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav h5 {
+  position: relative;
+  font-size: 24px;
+  padding-left: 64px;
+  margin: 24px 0;
+}
+
+.sidenav h5::before {
+  position: absolute;
+  width: 100%;
+  height: 200%;
+  content: '';
+  background-image: url('logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 12px;
+  top: -12px;
+}
+
+.main {
+  padding-left: 280px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  height: 100%;
+  padding-bottom: 200px;
+}
+
+.main h1 {
+  color: rgb(59, 209, 255);
+}
+
+.main h2 {
+  color: rgb(183, 223, 255);
+}
+
+.main p {
+  font-size: 20px;
+  line-height: 28px;
+  color: #ffffff;
+
+}
+
+
+.main li {
+  color: #ffffff;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
